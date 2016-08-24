@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'foods/index'
+
+  get 'courses/index'
+
+  get 'greeter/hello'
+
+  get 'greeter/goodbye' => 'greeter#bye'
+
+  root 'greeter#hello'
+
+  get 'courses/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
